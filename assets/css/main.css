@@ -110,7 +110,7 @@ body {
   background: var(--bg-gold);
   color: var(--text-primary);
   cursor: pointer;
-  transition: border-color 0.15s, color 0.15s, background-color 0.25s;
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
 }
 
 .reserve-table-btn:hover {
@@ -318,7 +318,7 @@ body {
   background: var(--bg-gold);
   color: var(--text-primary);
   cursor: pointer;
-  transition: border-color 0.15s, color 0.15s, background-color 0.25s;
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
 }
 .view-menu-btn:hover {
   border-color: var(--accent);
@@ -337,7 +337,7 @@ body {
   background: transparent;
   color: var(--text-white);
   cursor: pointer;
-  transition: border-color 0.15s, color 0.15s, background-color 0.25s;
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
 }
 .book-table-btn:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)) ;
@@ -407,7 +407,7 @@ body {
   background: var(--bg-gold);
   color: var(--text-primary);
   cursor: pointer;
-  transition: border-color 0.15s, color 0.15s, background-color 0.25s;
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
 }
 .discover-more:hover {
   border-color: var(--accent);
@@ -455,7 +455,7 @@ body {
   text-decoration: underline;
   text-underline-offset: 3px;
   cursor: pointer;
-  transition: border-color 0.15s, color 0.15s, background-color 0.25s;
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
 }
 .view-menu-link:hover {
   color: var(--accent);
@@ -649,13 +649,17 @@ body {
   font-size: 0.775rem;
   margin-bottom: 1rem;
 }
+.phone-number {
+  color: var(--text-white);
+  text-decoration: none;
+}
 .reservations .reserve-table-btn {
   font-family: var(--font-sans);
   font-size: 0.775rem;
   font-weight: 500;
   display: flex;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
   gap: 6px;
   width: fit-content;
   padding: 5px 12px;
@@ -664,7 +668,9 @@ body {
   background: var(--bg-gold);
   color: var(--text-primary);
   cursor: pointer;
-  transition: border-color 0.15s, color 0.15s, background-color 0.25s;
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
+  margin: 0 auto;
 }
 .reservations .reserve-table-btn:hover {
   background: var(--accent);
