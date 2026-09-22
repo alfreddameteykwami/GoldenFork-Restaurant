@@ -653,6 +653,10 @@ body {
   color: var(--text-white);
   text-decoration: none;
 }
+.restaurant-email {
+  color: var(--text-white);
+  text-decoration: none; 
+}
 .reservations .reserve-table-btn {
   font-family: var(--font-sans);
   font-size: 0.775rem;
