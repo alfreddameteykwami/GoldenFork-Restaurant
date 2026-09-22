@@ -1,54 +1,72 @@
-# THE GOLDEN FORK
-The Golden Fork is a modern and responsive restaurant landing page designed to showcase a premium dining experience. The website provides visitors with information about the restaurant, its signature meals, services, atmosphere, and ways to make a reservation.
+## GOLDEN FORK - RESTAURANT LANDING PAGE
 
-## PROJECT FEATURES
-- Responsive navigation bar
-- Hero section with restaurant branding and food imagery
-- About the restaurant section
-- Popular and signature meals section
-- Why Choose Us section
+Golden Fork is a responsive restaurant landing page that I designed and developed as a frontend web development project.
+
+The main goal of the project was to create a simple, modern and attractive website for a restaurant while making sure it works well on different screen sizes.
+
+# LIVE WEBSITE
+
+https://goldenfork.vercel.app/
+
+# FEATURES
+
+- Responsive design for mobile, tablet and desktop
+- Restaurant hero section
+- Restaurant menu section
 - Food gallery
-- Customer testimonials
-- Reservation call-to-action
-- Contact information
+- Reservation section
+- Opening hours
+- Contact section
+- Phone call link
+- Email link
+- WhatsApp contact link
 - Social media links
-- Responsive footer
-- Mobile, tablet, laptop, and large-screen support
-- Modern dark, cream, and golden color scheme
-- Boxicons for interface and social media icons
+- Responsive navigation
+- Hover effects and transitions
 
-## TECHNOLOGIES USED
+# TECHNOLOGIES USED
+
 - HTML5
 - CSS3
 - JavaScript
 - Boxicons
+- Vercel
 
-## DESIGN
-The Golden Fork uses a modern restaurant-inspired design with dark charcoal, cream, and warm golden colors. The design focuses on high-quality food imagery, clear typography, strong visual hierarchy, and simple navigation.
+# RESPONSIVE DESIGN
 
-## RESPONSIVE DESIGN
-The website is designed to work across different screen sizes, including:
-- Mobile phones
-- Tablets
-- Laptops
-- Desktop computers
-- Large screens
-- CSS Flexbox, CSS Grid, media queries, and responsive sizing are used to create the responsive layout.
+The website was designed to work across different screen sizes, including mobile phones, tablets, laptops and larger desktop screens.
 
-## RUNNING THE PROJECT
-The project is a frontend website and does not require a backend to run. Open the index.html file in a web browser, or use the Live Server extension in Visual Studio Code for development.
+I also tested the website on mobile devices and made adjustments to improve the layout and user experience on smaller screens.
 
-## DEPLOYMENT
-The website can be deployed through GitHub and Vercel. After connecting the GitHub repository to Vercel, changes pushed to the repository can be automatically deployed.
+# PROJECT STRUCTURE
 
-## FUTURE IMPROVEMENTS
-- Online table reservation system
-- Interactive food menu
-- Online food ordering
-- Contact form
-- Backend integration
-- Database integration
-- Online payment system
-- Customer accounts
-- Restaurant administration dashboard
-- Google Maps integration
+golden-fork/
+|
+|-- index.html
+|-- css/
+|   |-- style.css
+|-- js/
+|   |-- script.js
+|-- images/
+|   |-- ...
+|-- README.txt
+
+# PROJECT PURPOSE
+
+I built this project to improve my frontend development skills and get more experience creating complete responsive websites.
+
+While working on the project, I practiced working with responsive layouts, CSS positioning, typography, images, navigation, buttons, links and mobile browser compatibility.
+
+# DEPLOYMENT
+
+The website was deployed using Vercel.
+
+# LIVE LINK
+
+https://goldenfork.vercel.app/
+
+# DEVELOPER
+
+Alfred Dametey Kwami
+
+Frontend Developer and Programmer
