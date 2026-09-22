@@ -1,0 +1,29 @@
+:root {
+  --bg-primary: #fbf7d2;
+  --bg-card: #ffffff;
+  --bg-white: #ffffff;
+  --bg-secondary: #080808;
+  --bg-gold: #ffd700;
+  --accent: #dca801;
+
+
+  --text-primary: #090909;
+  --text-muted: #64748b;
+  --text-white: #ffffff;
+  --text-gold: #ffc400;
+  --muted: #1f1d1d;
+
+  --surface: #ffffff;
+
+  --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --border-2: #262424;
+  --border: #efefef;
+  --radius-lg: 0.75rem;
+  --radius-md: 0.5rem;
+  --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+
+  --nav-h: 56px
+}

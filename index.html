@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Golden Fork Resturant - Homepage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://fasthash.com/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+
+    <!-- Sidebar overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Mobile sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+          <span class="sidebar-label">menu</span>
+          <button class="sidebar-close" id="sidebar-close" aria-label="Close menu">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="#hero"     class="sidebar-link" data-close><span>Home</span>     <span class="sidebar-num">01</span></a>
+          <a href="#about"    class="sidebar-link" data-close><span>About</span>    <span class="sidebar-num">02</span></a>
+          <a href="#menu"     class="sidebar-link" data-close><span>Menu</span>     <span class="sidebar-num">03</span></a>
+          <a href="#gallery"  class="sidebar-link" data-close><span>Gallery</span>  <span class="sidebar-num">04</span></a>
+          <a href="#contact"  class="sidebar-link" data-close><span>Contact</span>  <span class="sidebar-num">05</span></a>
+        </nav>
+        <div class="sidebar-footer">&copy; 2026 The Golden Fork Resturant | All rights reserved.</div>
+    </aside>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <div class="restaurant-info">
+          <span class="restaurant-logo">
+            <img src="assets/images/restaurant-logo.png" width="55" height="60" alt="Restaurant logo">
+          </span>
+          <span class="restaurant-name">
+            <h1>The Golden Fork</h1>
+            <p>RESTURANT</p>
+          </span>
+        </div> 
+
+        <div class="nav-desktop">
+          <a href="#hero"     class="nav-link">Home</a>
+          <a href="#about"    class="nav-link">About</a>
+          <a href="#menu"     class="nav-link">Menu</a>
+          <a href="#gallery"  class="nav-link">Gallery</a>
+          <a href="#contact"  class="nav-link">Contact</a>
+          <a class="reserve-table-btn">Reserve a Table</a>
+        </div>
+        
+        <div class="nav-mobile">
+          <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-badge">
+          <p class="hero-badge-txt">GOOD FOOD | GREAT VIBES</p>
+        </div>
+        <h1 class="hero-heading">A Taste You'll Always</h1>
+        <h1 class="hero-accent">Remember</h1>
+        <p class="hero-message">Fresh ingrediants, expertly crafted dishes and a cozy atmosphere - that's what we serve</p>
+        <div class="hero-btns reveal">
+          <a href="#" class="view-menu-btn">View Menu</a>
+          <a href="#" class="book-table-btn">Book a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid reveal">
+          <div class="about-grid-card">
+            <p class="section-badge">
+              <span class="badge-line"></span>
+              About Us
+            </p>
+            <h1 class="about-heading ">More Than Just a Meal</h1>
+            <p class="about-message">The Golden Fork is a place where great food brings people together. We are passionate about creating memorable dining experienced with fresh ingredients, unique flavors and excellent services.</p>
+            <a href="#" class="discover-more">Discover More</a>
+          </div>
+
+          <div class="about-grid-card">
+            <img src="assets/images/bg2.jpg"  class="restaurant-image" alt="Restaurant image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <p class="section-badge">
+          <span class="badge-line"></span>
+          Popular Menu
+        </p>
+        <header class="menu-header reveal">
+          <h1 class="menu-heading">Our Signature Dishes</h1>
+          <a href="#" class="view-menu-link">View Full Menu &RightArrow;</a>
+        </header>
+        <div class="menu-grid reveal">
+          <div class="menu-grid-card reveal">
+            <div>
+              <img src="assets/images/grilledchicken2.jpg" class="dish-image" alt="Grilled chicken">
+            </div>
+            <div class="dish-info">
+              <h2 class="dish-name">Grilled Chicken</h2>
+              <p class="dish-description">Tender grilled chicken with herbs and spices.</p>
+              <strong><p class="dish-price">$12.99</p></strong>
+            </div>
+          </div>
+          <div class="menu-grid-card reveal">
+            <div>
+              <img src="assets/images/beefsteak.jpg" class="dish-image" alt="Beef Steak">
+            </div>
+            <div class="dish-info">
+              <h2 class="dish-name">Beef Steak</h2>
+              <p class="dish-description">Juicy steak cooked to perfection.</p>
+              <strong><p class="dish-price">$16.99</p></strong>
+            </div>
+          </div>
+          <div class="menu-grid-card reveal">
+            <div>
+              <img src="assets/images/pastaalfredo3.jpg" class="dish-image" alt="Pasta Alfredo">
+            </div>
+            <div class="dish-info">
+              <h2 class="dish-name">Pasta Alfredo</h2>
+              <p class="dish-description">Creamy pasta with parmesan cheese.</p>
+              <strong><p class="dish-price">$11.99</p></strong>
+            </div>
+          </div>
+          <div class="menu-grid-card reveal">
+            <div>
+              <img src="assets/images/vegetablerice.jpg" class="dish-image" alt="Vegetable Rice">
+            </div>
+            <div class="dish-info">
+              <h2 class="dish-name">Vegetable Rice</h2>
+              <p class="dish-description">Fresh vegetables with fragrant rice.</p>
+              <strong><p class="dish-price">$9.99</p></strong>
+            </div>
+          </div>
+          <div class="menu-grid-card reveal">
+            <div>
+              <img src="assets/images/seafoodpasta2.jpg" class="dish-image" alt="Seafood Pasta">
+            </div>
+            <div class="dish-info">
+              <h2 class="dish-name">Seafood Pasta</h2>
+              <p class="dish-description">Pasta with fresh seafood and herbs.</p>
+              <strong><p class="dish-price">$14.99</p></strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features" id="features">
+      <div class="container">
+        <h1 class="features-title">Why Choose Us</h1>
+        <div class="features-grid">
+          <div class="features-grid-card reveal">
+            <div class="icon-circle">
+              <i class="bx bx-leaf"></i>
+            </div>
+            <h2 class="features-heading">Fresh Ingredients</h2>
+            <p class="features-description">We use only the freshest and highest quality ingredients.</p>
+          </div>
+          <div class="features-grid-card reveal">
+            <div class="icon-circle"><i class="bx bx-dish"></i></div>
+            <h2 class="features-heading">Experienced Chefs</h2>
+            <p class="features-description">Our chefs bring years of experience and passion to every dish.</p>
+          </div>
+          <div class="features-grid-card reveal">
+            <div class="icon-circle"><i class="bx bx-home"></i></div>
+            <h2 class="features-heading">Cozy Atmosphere</h2>
+            <p class="features-description">Relax and enjoy in our warm and inviting space.</p>
+          </div>
+          <div class="features-grid-card reveal">
+            <div class="icon-circle"><i class="bx bx-time-five"></i></div>
+            <h2 class="features-heading">Fast Service</h2>
+            <p class="features-description">We value your time and ensure quick, friendly service.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <p class="section-badge">
+          <span class="badge-line"></span>
+          Gallery
+        </p>
+        <h1 class="gallery-heading">A Look Inside</h1>
+        <div class="gallery-grid">
+          <div class="gallery-grid-card reveal">
+            <img src="assets/images/beefsteak3.jpg" alt="Beef Steak">
+          </div>
+          <div class="gallery-grid-card reveal">
+            <img src="assets/images/bg3.jpg" alt="Restaurant Interior">
+          </div>
+          <div class="gallery-grid-card reveal">
+            <img src="assets/images/beefsteak.jpg" alt="Beef Steak">
+          </div>
+          <div class="gallery-grid-card reveal">
+            <img src="assets/images/seafoodpasta2.jpg" alt="Seafood Pasta">
+          </div>
+          <div class="gallery-grid-card reveal">
+            <img src="assets/images/seafoodpasta.jpg" alt="Seafood Pasta">
+          </div>
+          <div class="gallery-grid-card reveal">
+            <img src="assets/images/beefsteak5.jpg" alt="Beef Steak">
+          </div>
+          <div class="gallery-grid-card reveal">
+            <img src="assets/images/pastaalfredo3.jpg" alt="Pasta Alfredo">
+          </div>
+          <div class="gallery-grid-card reveal">
+            <img src="assets/images/bg4.jpg" alt="Restaurant Interior">
+          </div>
+          <div class="gallery-grid-card reveal">
+            <img src="assets/images/beefsteak2.jpg" alt="Restaurant Interior">
+          </div>
+          <div class="gallery-grid-card reveal">
+            <img src="assets/images/pastaalfredo.jpg" alt="Restaurant Interior">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <!-- <section class="reviews" id="reviews">
+
+    </section> -->
+
+    <!-- Reservations -->
+    <section class="reservations" id="reservations">
+      <div class="container reveal">
+        <h1>Your table is waiting.</h1>
+        <p>Book now and enjoy a memorable dining experience.</p>
+        <a class="reserve-table-btn">Book a Table</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-grid reveal">
+          <div>
+            <div class="restaurant-info">
+              <span class="restaurant-logo"><img src="/assets/images/restaurant-logo.png" alt="Resturant Logo" width="55" height="60"></span>
+              <span class="restaurant-name">
+                <h1>The Golden Fork</h1>
+                <p>RESTAURANT</p>
+              </span>
+            </div>
+            <p class="restaurant-motto">Great food. Good people. Unforgetable moments.</p>
+            <div class="social-links">
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+              <a href="#"><i class="bx bxl-youtube"></i></a>
+            </div> 
+          </div>
+          <div class="quick-links">
+            <h1>Quick Links</h1>
+            <a href="#hero">    Home    </a>
+            <a href="#about">   About   </a>
+            <a href="#menu">    Menu    </a>
+            <a href="#gallery"> Gallery </a>
+            <a href="#contact"> Contact </a>
+          </div>
+          <div class="opening-hours-container">
+            <h1>Opening Hours</h1>
+            <p>
+              <span class="opening-days">Mon - Thu</span>
+              <span class="opening-hours">6:00AM - 10:00PM</span>
+            </p>
+            <p>
+              <span class="opening-days">Fri - Sat</span>
+              <span class="opening-hours">8:00AM - 11:00PM</span>
+            </p>
+            <p>
+              <span class="opening-days">Sun</span>
+              <span class="opening-hours">8:00AM - 9:00PM</span>
+            </p>
+          </div>
+          <div class="contacts">
+            <h1>Contact Us</h1>
+            <p><i class="bx bx-phone" aria-hidden="false"></i>+233 54 123 4567</p>
+            <p><i class="bx bx-envelope" aria-hidden="false"></i>info@goldenfork.com</p>
+            <p><i class="bx bx-map" aria-hidden="false"></i>123 Restaurant Street, Accra, Ghana</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span class="footer-name">&copy; 2026 The Golden Fork. All rights reserved.</span>
+        <span class="footer-links">
+          <p>
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Terms & Conditions</a>
+          </p>
+        </span>
+      </div>
+    </footer>
+
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
