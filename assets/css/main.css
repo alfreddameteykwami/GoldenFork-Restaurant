@@ -656,6 +656,7 @@ body {
   align-items: center;
   justify-self: center;
   gap: 6px;
+  width: fit-content;
   padding: 5px 12px;
   border: 1px solid var(--bg-gold);
   border-radius: 8px;
@@ -767,6 +768,7 @@ body {
   gap: 1rem;
   font-size: 0.775rem;
   align-items: center;
+  color: var(--text-white);
 }
 .contacts i {
   color: var(--bg-gold);
