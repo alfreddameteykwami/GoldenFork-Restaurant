@@ -625,6 +625,7 @@ body {
   padding: 4rem 0;
   justify-content: center;
   text-align: center;
+  align-items: center;
   color: var(--text-white);
   background: linear-gradient(
     to right, rgba(0, 0, 0, 0.95) 0%,
