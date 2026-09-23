@@ -73,14 +73,11 @@ body {
   font-weight: 600;
   height: 1.5rem;
 }
-@media (max-width: 767px) {
-  /* .restaurant-name h1 { font-size: 1.3rem;} */
-}
-
 .restaurant-name p {
   letter-spacing: 5px;
   font-size: 0.775rem;
 }
+
 .nav-desktop {
   display: flex;
   align-items: center;
@@ -677,6 +674,7 @@ body {
   margin: 0 auto;
 }
 .reservations .reserve-table-btn:hover {
+  border-color: var(--accent);
   background: var(--accent);
 }
 
