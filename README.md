@@ -49,7 +49,7 @@ golden-fork/
 |   |-- script.js
 |-- images/
 |   |-- ...
-|-- README.txt
+|-- README.md
 
 # PROJECT PURPOSE
 

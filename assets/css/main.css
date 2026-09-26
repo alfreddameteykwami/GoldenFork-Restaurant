@@ -85,6 +85,8 @@ body {
 }
 
 .nav-link {
+  position: relative;
+  text-decoration: none;
   font-family: var(--font-sans);
   font-size: 0.7rem;
   letter-spacing: 0.1em;
@@ -93,6 +95,18 @@ body {
   transition: color 0.15s;
 }
 .nav-link:hover { color: var(--text-gold); }
+.nav-link.active { color: var(--text-gold); }
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 38px;
+  height: 2px;
+  background: var(--bg-gold);
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
 
 .reserve-table-btn {
   font-family: var(--font-sans);
@@ -150,7 +164,6 @@ body {
 @media (max-width: 767px) {
   .nav-desktop { display: none; }
   .nav-mobile  { display: flex; }
-  /* .restaurant-name h1 { font-size: 1.05rem; } */
 }
 
 /* ── Sidebar ── */
@@ -226,6 +239,7 @@ body {
   transition: color 0.15s;
 }
 .sidebar-link:hover { color: var(--text-gold); border-bottom: 1px solid var(--accent);}
+.sidebar-link.active { color: var(--bg-gold);  border-bottom: 1px solid var(--text-gold)}
 .sidebar-num { color: var(--text-gold); font-size: 0.625rem; }
 
 .sidebar-footer {

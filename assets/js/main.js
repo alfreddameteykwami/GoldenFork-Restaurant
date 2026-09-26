@@ -1,8 +1,9 @@
-/* ── Hamburger + sidebar ── */
+/* Hamburger + sidebar */
 const hamburger = document.getElementById('hamburgerBtn');
 const sidebar   = document.getElementById('sidebar');
 const overlay   = document.getElementById('sidebar-overlay');
 const closeBtn  = document.getElementById('sidebar-close');
+
 
 function openMenu() {
   hamburger.classList.add('open');
@@ -29,7 +30,7 @@ document.querySelectorAll('.sidebar-link[data-close]').forEach(link => {
   link.addEventListener('click', closeMenu);
 });
 
-/* ── Scroll reveal ── */
+/* Scroll reveal */
 const revealEls = document.querySelectorAll('.reveal');
 const io = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
@@ -47,10 +48,82 @@ const io = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => io.observe(el));
 
-/* ── Navbar shadow on scroll ── */
+/* Navbar shadow on scroll */
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.style.boxShadow = window.scrollY > 10
-    ? '0 4px 24px rgba(0,0,0,0.18)'
-    : 'none';
+  ? '0 4px 24px rgba(0,0,0,0.18)'
+  : 'none';
 }, { passive: true });
+
+document.documentElement.style.scrollBehavior = "smooth";
+
+
+/* Navigation */
+const navLinks = document.querySelectorAll(".nav-link");
+const sidebarLinks = document.querySelectorAll(".sidebar-link");
+const sections = document.querySelectorAll("#home, #about, #menu, #gallery, #contact");
+
+const allNavLinks = document.querySelectorAll(".nav-link, sidebar-link");
+
+allNavLinks.forEach(link => {
+  link.addEventListener("click", function () {
+
+    const targetId = this.getAttribute("href");
+
+    if (!targetId || !targetId.getAttribute("href")) {
+      return;
+    }
+
+    const targetSection = document.querySelector(targetId);
+
+    if (!targetSection) {
+      return;
+    }
+
+    closeMenu();
+
+  });
+});
+
+/* Active Navigation */
+
+function setActiveSection(sectionId) {
+  navLinks.forEach(link => {
+    link.classList.toggle(
+      "active",
+      link.getAttribute("href") === `#${sectionId}`
+    );
+  });
+  sidebarLinks.forEach(link => {
+    link.classList.toggle(
+      "active",
+      link.getAttribute("href") === `#${sectionId}`
+    );
+  });
+}
+
+/* Intersection Observer */
+const observerOptions = {
+  root: null,
+  rootMargin: "-35% 0px -55% 0px",
+  threshold: 0
+};
+
+const sectionObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setActiveSection(
+          entry.target.id
+        );
+      }
+    });
+  },
+  observerOptions
+);
+
+/* Observe Section */
+sections.forEach(section => {
+  sectionObserver.observe(section);
+});
