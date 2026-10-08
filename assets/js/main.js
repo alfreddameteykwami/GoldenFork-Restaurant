@@ -62,7 +62,7 @@ document.documentElement.style.scrollBehavior = "smooth";
 /* Navigation */
 const navLinks = document.querySelectorAll(".nav-link");
 const sidebarLinks = document.querySelectorAll(".sidebar-link");
-const sections = document.querySelectorAll("#home, #about, #menu, #gallery, #contact");
+const sections = document.querySelectorAll("#hero, #about, #menu, #gallery, #contact");
 
 const allNavLinks = document.querySelectorAll(".nav-link, sidebar-link");
 
